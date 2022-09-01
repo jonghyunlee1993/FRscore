@@ -1,3 +1,0 @@
-weights/image_regression.pt filter=lfs diff=lfs merge=lfs -text
-*.gitattributes filter=lfs diff=lfs merge=lfs -text
-.gitattributes filter=lfs diff=lfs merge=lfs -text
