@@ -1,0 +1,5 @@
+train: sono_roi/train/images
+val: sono_roi/valid/images
+
+nc: 1
+names: ['roi']
