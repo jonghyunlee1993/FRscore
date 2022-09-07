@@ -38,7 +38,12 @@
     <p>
       Introduce the AST, ALT, PLT score, and ultrasonography images <b>(png or jpg)</b>
       <br>
-      For stable prediction, we recommend you that upload at least five images of ultrasonography images of a single patient
+      <br>
+      For stable prediction, 
+      <br>
+      - upload at least five images of ultrasonography images of a single patient.
+      <br>
+      - the range of AST, and ALT is 10~100. If the score exceeds the range, would be adjusted.
     </p>
       <!-- Inputs for our ML model -->
       <form action="{{ url_for('predict')}}" method="post" enctype="multipart/form-data">

@@ -42,8 +42,23 @@ def predict():
     detect(destination)
     
     age = float(request.form["Age"])
+    if age > 99:
+        age = 99
+    elif age < 10:
+        age = 10
+        
     ast = float(request.form["AST"])
+    if ast > 100:
+        ast = 100
+    elif ast < 10:
+        ast = 10
+    
     alt = float(request.form["ALT"])
+    if alt > 100:
+        alt = 100
+    elif alt < 10:
+        alt = 10
+    
     plt = float(request.form["PLT"])
 
     if age is not None:
