@@ -18,6 +18,7 @@ To compute the FR score, you need AST, ALT, PLT, and more than two images of abd
 ## Executable file
 - Using pyinastaller, you can generate an executable file
 `pyinstaller --add-data "weights;weights" --add-data "templates;templates" --add-data "yolov5;yolov5" --add-data "uploaded;uploaded" --hidden-import torch --hidden-import cv2 --hidden-import albumentations --hidden-import flask --hidden-import timm --hidden-import tqdm --hidden-import glob --hidden-import pathlib app.py`
+- Or download folder from [Google Drive](https://drive.google.com/drive/folders/1E0sFaVaah_-G55Vb-JGW6e69VNa6zSkX). Download folder and double click the `app.exe` file
 
 ## Performance
 ### FR score threshold based on transient elastography (TE)
