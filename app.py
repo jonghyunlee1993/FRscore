@@ -1,6 +1,11 @@
 import sys
 import math
 import os
+os.environ["PYTORCH_JIT"] = "0"
+
+import warnings
+warnings.filterwarnings(action='ignore')
+
 import random
 import shutil
 
@@ -66,7 +71,7 @@ def predict():
     else:
         fib4 = 0
     fib4 = round(fib4, 2)
-    apri = (ast / 34) / plt
+    apri = (ast / 34) / plt * 100
     apri = round(apri, 2)
 
     model = load_model()
