@@ -1,5 +1,3 @@
 
 def FR_score(v1, v2, AST, ALT, PLT):
-    score = 0.0153 * v1 + 0.0436 * v2 + 0.0054 * AST + (-0.0016 * ALT) + (-0.0024 * PLT) + 1.7874
-        
-    return score
+    return (15.27 * v1 + 43.62 * v2 + 5.41 * AST) / (1.65 * ALT + 2.35 * PLT)
