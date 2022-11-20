@@ -75,9 +75,9 @@ def predict():
     apri = round(apri, 2)
 
     model = load_model()
-    v1, v2 = predict_image(destination + "/crops", model)
+    v1, v3 = predict_image(destination + "/crops", model)
 
-    fr_score = FR_score(v1, v2, ast, alt, plt)
+    fr_score = FR_score(v1, v3, ast, alt, plt)
     
     # remove data files
     shutil.rmtree(destination)
@@ -91,4 +91,4 @@ def predict():
 if __name__ == "__main__":
     app.secret_key = 'super secret key'
     app.config['SESSION_TYPE'] = 'filesystem'
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")

@@ -37,5 +37,5 @@ def predict_image(fpath, model):
     
     results.sort(reverse=True)
     
-    return results[:2]
+    return results[0], results[2]
     
