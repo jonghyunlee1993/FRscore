@@ -162,17 +162,17 @@ def hist2d(x, y, n=100):
     return np.log(hist[xidx, yidx])
 
 
-def butter_lowpass_filtfilt(data, cutoff=1500, fs=50000, order=5):
-    from scipy.signal import butter, filtfilt
+# def butter_lowpass_filtfilt(data, cutoff=1500, fs=50000, order=5):
+#     from scipy.signal import butter, filtfilt
 
-    # https://stackoverflow.com/questions/28536191/how-to-filter-smooth-with-scipy-numpy
-    def butter_lowpass(cutoff, fs, order):
-        nyq = 0.5 * fs
-        normal_cutoff = cutoff / nyq
-        return butter(order, normal_cutoff, btype='low', analog=False)
+#     # https://stackoverflow.com/questions/28536191/how-to-filter-smooth-with-scipy-numpy
+#     def butter_lowpass(cutoff, fs, order):
+#         nyq = 0.5 * fs
+#         normal_cutoff = cutoff / nyq
+#         return butter(order, normal_cutoff, btype='low', analog=False)
 
-    b, a = butter_lowpass(cutoff, fs, order=order)
-    return filtfilt(b, a, data)  # forward-backward filter
+#     b, a = butter_lowpass(cutoff, fs, order=order)
+#     return filtfilt(b, a, data)  # forward-backward filter
 
 
 def output_to_target(output):
