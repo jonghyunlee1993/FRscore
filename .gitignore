@@ -2,6 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,visualstudiocode,jupyternotebooks
 
 sample_images
+weights/image_regression.pt
 build
 dist
 app.spec
